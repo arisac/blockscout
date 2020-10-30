@@ -1,6 +1,58 @@
 ## Current
 
 ### Features
+- [#3406](https://github.com/poanetwork/blockscout/pull/3406), [#3409](https://github.com/poanetwork/blockscout/pull/3409) - Adding mp4 files support for NFTs
+- [#3398](https://github.com/poanetwork/blockscout/pull/3398) - Collect and display gas usage per day at the main page
+- [#3385](https://github.com/poanetwork/blockscout/pull/3385), [#3397](https://github.com/poanetwork/blockscout/pull/3397) - Total gas usage at the main page
+- [#3384](https://github.com/poanetwork/blockscout/pull/3384), [#3386](https://github.com/poanetwork/blockscout/pull/3386) - Address total gas usage
+- [#3377](https://github.com/poanetwork/blockscout/pull/3377) - Add links to contract libraries
+- [#2292](https://github.com/poanetwork/blockscout/pull/2292), [#3356](https://github.com/poanetwork/blockscout/pull/3356), [#3359](https://github.com/poanetwork/blockscout/pull/3359), [#3360](https://github.com/poanetwork/blockscout/pull/3360), [#3365](https://github.com/poanetwork/blockscout/pull/3365) - Add Web UI for POSDAO Staking DApp
+- [#3354](https://github.com/poanetwork/blockscout/pull/3354) - Tx hash in EOA coin balance history
+- [#3333](https://github.com/poanetwork/blockscout/pull/3333), [#3337](https://github.com/poanetwork/blockscout/pull/3337), [#3393](https://github.com/poanetwork/blockscout/pull/3393) - Dark forest contract custom theme
+- [#3330](https://github.com/poanetwork/blockscout/pull/3330) - Caching of address transactions counter, remove query 10_000 rows limit
+
+
+### Fixes
+- [#3408](https://github.com/poanetwork/blockscout/pull/3408) - Fix (total) difficulty display
+- [#3401](https://github.com/poanetwork/blockscout/pull/3401) - Fix procedure of marking internal transactions as failed
+- [#3399](https://github.com/poanetwork/blockscout/pull/3399) - Fix Token transfers CSV export
+- [#3396](https://github.com/poanetwork/blockscout/pull/3396) - Handle exchange rates request throttled
+- [#3382](https://github.com/poanetwork/blockscout/pull/3382) - Check ets table exists for know tokens
+- [#3376](https://github.com/poanetwork/blockscout/pull/3376) - Fix contract nested inputs
+- [#3375](https://github.com/poanetwork/blockscout/pull/3375) - Prevent terminating of tokens/contracts process
+- [#3374](https://github.com/poanetwork/blockscout/pull/3374) - Fix find block timestamp query
+- [#3373](https://github.com/poanetwork/blockscout/pull/3373) - Fix horizontal scroll in Tokens table
+- [#3370](https://github.com/poanetwork/blockscout/pull/3370) - Improve contracts verification: refine constructor arguments extractor
+- [#3368](https://github.com/poanetwork/blockscout/pull/3368) - Fix Verify contract loading button width
+- [#3357](https://github.com/poanetwork/blockscout/pull/3357) - Fix token transfer realtime fetcher
+- [#3353](https://github.com/poanetwork/blockscout/pull/3353) - Fix xDai buttons hover color
+- [#3352](https://github.com/poanetwork/blockscout/pull/3352) - Fix dark body background
+- [#3350](https://github.com/poanetwork/blockscout/pull/3350) - Fix tokens list pagination
+- [#3347](https://github.com/poanetwork/blockscout/pull/3347) - Contract interaction: fix encoding of bytes output
+- [#3346](https://github.com/poanetwork/blockscout/pull/3346), [#3351](https://github.com/poanetwork/blockscout/pull/3351) - Fix inventory tab pagination
+- [#3344](https://github.com/poanetwork/blockscout/pull/3344) - Fix logs search on address page
+- [#3342](https://github.com/poanetwork/blockscout/pull/3342) - Fix mobile styles for contract code tab
+- [#3341](https://github.com/poanetwork/blockscout/pull/3341) - Change Solc binary downloader path to official primary supported path
+- [#3339](https://github.com/poanetwork/blockscout/pull/3339) - Repair websocket subscription
+- [#3329](https://github.com/poanetwork/blockscout/pull/3329) - Fix pagination for bridged tokens list page
+- [#3335](https://github.com/poanetwork/blockscout/pull/3335) - MarketCap calculation: check that ETS tables exist before inserting new data or lookup from the table
+
+### Chore
+- [#3407](https://github.com/poanetwork/blockscout/pull/3407) - Add EthereumJSONRPC.HTTP.HTTPoison.json_rpc function clause when URL is null
+- [#3405](https://github.com/poanetwork/blockscout/pull/3405) - N/A instead of 0 for market cap if it is not fetched
+- [#3404](https://github.com/poanetwork/blockscout/pull/3404) - DISABLE_KNOWN_TOKENS env var
+- [#3403](https://github.com/poanetwork/blockscout/pull/3403) - Refactor Coingecko interaction
+- [#3394](https://github.com/poanetwork/blockscout/pull/3394) - Actualize docker vars list
+- [#3372](https://github.com/poanetwork/blockscout/pull/3372), [#3380](https://github.com/poanetwork/blockscout/pull/3380) - Improve all lists header container
+- [#3371](https://github.com/poanetwork/blockscout/pull/3371) - Eliminate dark background except Dark forest theme
+- [#3366](https://github.com/poanetwork/blockscout/pull/3366) - Stabilize tests execution in Github Actions CI
+- [#3343](https://github.com/poanetwork/blockscout/pull/3343) - Make (Bridged) Tokens' list page's header more compact
+
+
+## 3.3.3-beta
+
+### Features
+- [#3320](https://github.com/poanetwork/blockscout/pull/3320) - Bridged tokens from AMB extensions support
 - [#3311](https://github.com/poanetwork/blockscout/pull/3311) - List of addresses with restricted access option
 - [#3293](https://github.com/poanetwork/blockscout/pull/3293) - Composite market cap for xDai: TokenBridge + OmniBridge
 - [#3282](https://github.com/poanetwork/blockscout/pull/3282), [#3318](https://github.com/poanetwork/blockscout/pull/3318) - Import bridged tokens custom metadata
@@ -12,6 +64,7 @@
 - [#3261](https://github.com/poanetwork/blockscout/pull/3261) - Bridged tokens table
 
 ### Fixes
+- [#3323](https://github.com/poanetwork/blockscout/pull/3323) - Fix logs list API endpoint response
 - [#3319](https://github.com/poanetwork/blockscout/pull/3319) - Eliminate horizontal scroll
 - [#3314](https://github.com/poanetwork/blockscout/pull/3314) - Handle nil values from response of CoinGecko price API
 - [#3313](https://github.com/poanetwork/blockscout/pull/3313) - Fix xDai styles: invisible tokens on address
@@ -29,6 +82,8 @@
 - [#3256](https://github.com/poanetwork/blockscout/pull/3256) - Fix for invisible validator address at block page and wrong alert text color at xDai
 
 ### Chore
+- [#3327](https://github.com/poanetwork/blockscout/pull/3327) - Handle various indexer fetchers errors in setup with non-archive node
+- [#3325](https://github.com/poanetwork/blockscout/pull/3325) - Dark theme improvements
 - [#3316](https://github.com/poanetwork/blockscout/pull/3316), [#3317](https://github.com/poanetwork/blockscout/pull/3317) - xDai smile logo
 - [#3315](https://github.com/poanetwork/blockscout/pull/3315) - Environment variable to disable Bridge market cap updater
 - [#3308](https://github.com/poanetwork/blockscout/pull/3308) - Fixate latest stable release of Elixir, Node, Postgres
@@ -60,6 +115,7 @@
 - [#3220](https://github.com/poanetwork/blockscout/pull/3220) - Allow interaction with navbar menu at block-not-found page
 
 ### Chore
+- [#3326](https://github.com/poanetwork/blockscout/pull/3326) - Chart smooth lines
 - [#3250](https://github.com/poanetwork/blockscout/pull/3250) - Eliminate occurrences of obsolete env variable ETHEREUM_JSONRPC_JSON_RPC_TRANSPORT
 - [#3240](https://github.com/poanetwork/blockscout/pull/3240), [#3251](https://github.com/poanetwork/blockscout/pull/3251) - various CSS imroving
 - [f3a720](https://github.com/poanetwork/blockscout/commit/2dd909c10a79b0bf4b7541a486be114152f3a720) - Make wobserver optional
